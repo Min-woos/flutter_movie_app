@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/presentation/pages/detail/detail_page.dart';
 import 'package:movie_app/presentation/pages/home/home_page.dart';
-import 'package:movie_app/presentation/pages/home/home_page_view_model.dart';
 import 'package:movie_app/presentation/pages/home/widget/home_page_label.dart';
 import 'package:movie_app/presentation/pages/home/widget/horizontal_list.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

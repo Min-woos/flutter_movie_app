@@ -57,9 +57,9 @@ class _DetailPageState extends ConsumerState<DetailPage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(width: 0.5, color: Colors.white)),
-                    child: Padding(
+                    child: const Padding(
                       padding:
-                          const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                          EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                       child: SizedBox(
                         child: FittedBox(
                           fit: BoxFit.contain,
