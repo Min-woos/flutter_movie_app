@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/presentation/pages/home/home_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'homepage/homepage.dart';
+
 void main() {
    runApp(ProviderScope(child: MyApp()));
 }
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark(),
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
