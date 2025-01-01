@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:flutter_movie_app/data/data_source/movie_data_source.dart';
-import 'package:flutter_movie_app/data/dto/movie_detail_dto.dart';
-import 'package:flutter_movie_app/data/dto/movie_response_dto.dart';
+import 'package:movie_app/data/data_source/movie_data_source.dart';
+import 'package:movie_app/data/dto/movie_detail_dto.dart';
+import 'package:movie_app/data/dto/movie_response_dto.dart';
 import 'package:http/http.dart';
 
 class MovieAssetDataSourceImpl implements MovieDataSource {
