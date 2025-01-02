@@ -1,10 +1,11 @@
 import 'dart:convert';
 
+
 class MovieDetailDto {
   bool adult;
   String backdropPath;
   int budget;
-  List<int> genres;
+  List<dynamic> genres;
   String homepage;
   int id;
   String imdbId;
@@ -59,7 +60,7 @@ class MovieDetailDto {
     bool? adult,
     String? backdropPath,
     int? budget,
-    List<int>? genres,
+    List<dynamic>? genres,
     String? homepage,
     int? id,
     String? imdbId,
@@ -86,7 +87,7 @@ class MovieDetailDto {
       adult: adult ?? this.adult,
       backdropPath: backdropPath ?? this.backdropPath,
       budget: budget ?? this.budget,
-      genres: List<int>.from(genres ?? []),
+      genres: genres ?? this.genres,
       homepage: homepage ?? this.homepage,
       id: id ?? this.id,
       imdbId: imdbId ?? this.imdbId,
@@ -111,12 +112,12 @@ class MovieDetailDto {
     );
   }
 
-  factory MovieDetailDto.fromJson(Map<String, dynamic> json) {
-    return MovieDetailDto(
+  MovieDetailDto.fromJson(Map<String, dynamic> json) 
+    : this(
       adult: json['adult'] ?? false,
       backdropPath: json['backdrop_path'] ?? '',
       budget: json['budget'] ?? 0,
-      genres: List<int>.from(json['genre_ids'] ?? []),
+      genres: json['genres'] ?? [],
       homepage: json['homepage'] ?? '',
       id: json['id'] ?? 0,
       imdbId: json['imdb_id'] ?? '',
@@ -141,7 +142,6 @@ class MovieDetailDto {
       voteAverage: (json['vote_average'] as num?)?.toDouble() ?? 0.0,
       voteCount: json['vote_count'] ?? 0,
     );
-  }
 
   Map<String, dynamic> toJson() {
     return {
