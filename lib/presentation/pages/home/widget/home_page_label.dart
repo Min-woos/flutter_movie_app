@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePageLabel extends StatelessWidget {
-  HomePageLabel({
+  const HomePageLabel({
     super.key,
     required this.label,
   });
@@ -11,7 +11,7 @@ class HomePageLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Text(label),
     );
   }
