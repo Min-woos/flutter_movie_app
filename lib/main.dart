@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/pags/homepage/homepage.dart';
 import 'package:movie_app/presentation/pages/home/home_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -22,3 +23,4 @@ class MyApp extends StatelessWidget {
       home: HomePage(),
     );
   }
+}
